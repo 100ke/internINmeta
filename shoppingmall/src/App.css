@@ -3,6 +3,16 @@
   margin-right: 15px;
 }
 
+.cart .badge {
+  font-size: 0.75rem;
+  padding: 0.35em 0.5em;
+  transform: translate(-50%, 150%);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+}
+
 .list {
 
   padding-left: 30px;
@@ -11,6 +21,14 @@
 
 .card {
   margin-top: 20px;
+}
+
+.add-btn {
+  width: 70px;
+}
+
+.brand {
+  padding-left: 20px;
 }
 
 /* .App {

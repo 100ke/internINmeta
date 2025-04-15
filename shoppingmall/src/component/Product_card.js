@@ -1,9 +1,22 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import React, { useState } from 'react';
 
-function Product_card() {
-    return (
-    <Card className='card' style={{ width: '18rem' }}>
+function Product_card({setCartCount}) {
+  const [isAdded, setIsAdded] = useState(false);
+
+  const handleClick = () => {
+    if (!isAdded) {
+      setIsAdded(true);
+      setCartCount(prev => prev + 1);
+    } else {
+      setIsAdded(false);
+      setCartCount(prev => prev - 1);
+    }
+  };
+
+  return (
+    <Card className='card w-100' style={{ maxWidth: '18rem' }}>
       <Card.Img variant="top" src="/images/running_shoe_03.jpg" />
       <Card.Body>
         <Card.Title>브랜드 A</Card.Title>
@@ -11,10 +24,16 @@ function Product_card() {
         <Card.Text>
           35,000원
         </Card.Text>
-        <Button variant="dark" className='rounded-pill'>담기</Button>
+        <Button 
+          variant={isAdded ? 'secondary' : 'dark'} 
+          className='rounded-pill add-btn'
+          onClick={handleClick}
+        >
+          {isAdded?'담김!':'담기'}
+        </Button>
       </Card.Body>
     </Card>
-    )
+  )
 
 }
 
