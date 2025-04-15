@@ -13,7 +13,7 @@ function App() {
       <Container>
         <div className='list'>
           <h2>신발 상품 목록</h2>
-          <text>현재 6개의 상품이 있습니다.</text>
+          <span>현재 6개의 상품이 있습니다.</span>
           <Row>
             <Col xs={6} md={6} lg={4}><Product_card setCartCount={setCartCount}></Product_card></Col>
             <Col xs={6} md={6} lg={4}><Product_card setCartCount={setCartCount}></Product_card></Col>

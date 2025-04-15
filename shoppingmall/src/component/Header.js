@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import { RiShoppingBagLine } from "react-icons/ri";
+import React from 'react';
 
 function Header({cartCount}) {
     return (
