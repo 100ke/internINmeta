@@ -8,7 +8,7 @@ function Header({cartCount}) {
     <Container>
         <Navbar bg='dark' data-bs-theme='dark' expand="lg" className="bg-body-tertiary">
           <Container className='d-flex justify-content-between align-items-center'>
-            <Navbar.Brand href="#" className='brand'>Navbar</Navbar.Brand>
+            <Navbar.Brand href="#" className='brand'>Shooking</Navbar.Brand>
             <div className='position-relative'>
               <a className='cart btn'>
                 <RiShoppingBagLine size={25} />
