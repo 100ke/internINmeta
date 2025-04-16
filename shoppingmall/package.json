@@ -1,6 +1,7 @@
 {
   "name": "shoppingmall",
   "version": "0.1.0",
+  "homepage": "https://100ke.github.io/internINmeta",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
@@ -14,6 +15,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
@@ -42,6 +45,7 @@
     "@babel/preset-react": "^7.26.3",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
+    "gh-pages": "^6.3.0",
     "jest": "^27.5.1"
   }
 }
