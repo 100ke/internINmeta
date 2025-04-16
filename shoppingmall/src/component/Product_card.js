@@ -30,7 +30,7 @@ function Product_card({setCartCount}) {
 
   return (
     <Card className='card w-100' style={{ maxWidth: '18rem' }}>
-      <Card.Img variant="top" src="https://100ke.github.io/internINmeta/shoppingmall/public/images/running_shoe_03.jpg" />
+      <Card.Img variant="top" src="https://100ke.github.io/internINmeta/images/running_shoe_03.jpg" />
       <Card.Body>
         <Card.Title>브랜드 A</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">편안하고 착용감이 좋은 신발</Card.Subtitle>
