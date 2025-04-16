@@ -6,26 +6,26 @@ function Product_card({setCartCount}) {
   const [isAdded, setIsAdded] = useState(false);
 
   const handleClick = () => {
-    // if (!isAdded) {
-    //   setIsAdded(true);
-    //   setCartCount(prev => prev + 1);
-    // } else {
-    //   setIsAdded(false);
-    //   setCartCount(prev => prev - 1);
-    // }
-
-    // 비동기 처리 흉내
     if (!isAdded) {
       setIsAdded(true);
-      setTimeout(()=>{
-        setCartCount(prev => prev + 1);
-      },500);
+      setCartCount(prev => prev + 1);
     } else {
       setIsAdded(false);
-      setTimeout(()=>{
-        setCartCount(prev => prev + 1);
-      },500);
+      setCartCount(prev => prev - 1);
     }
+
+    // 비동기 처리 흉내
+    // if (!isAdded) {
+    //   setIsAdded(true);
+    //   setTimeout(()=>{
+    //     setCartCount(prev => prev + 1);
+    //   },500);
+    // } else {
+    //   setIsAdded(false);
+    //   setTimeout(()=>{
+    //     setCartCount(prev => prev + 1);
+    //   },500);
+    // }
   };
 
   return (
