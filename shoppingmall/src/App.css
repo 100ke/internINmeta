@@ -31,6 +31,61 @@
   padding-left: 20px;
 }
 
+.addcard {
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  height: 150px;
+  text-align: center;
+  align-items: center;
+  background: #b6b6b6;
+}
+
+.back-btn {
+  font-size: 23px;
+  margin-right: 20px;
+}
+
+.bundle {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.cardImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 280px;
+  height: 150px;
+  background: #272727;
+  padding: 10px;
+}
+
+.chip {
+  background: rgb(215, 195, 84);
+  width: 45px;
+  height: 35px;
+  margin-left: 0;
+  margin-top: 40px;
+}
+
+.cardInfo {
+  color: white;
+  text-align: justify;
+  margin-top: auto;
+  font-size: 13px;
+}
+
+.password-box {
+  width: 3rem !important;
+}
+
+.card-reg-btn {
+  width: 100%;
+}
+
 /* .App {
   text-align: center;
 }

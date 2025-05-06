@@ -44,6 +44,7 @@ function Product_card({setCartCount}) {
         >
           {isAdded?'담김!':'담기'}
         </Button>
+        <Button variant="warning" className='rounded-pill add-btn'>구매</Button>
       </Card.Body>
     </Card>
   )
