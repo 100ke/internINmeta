@@ -2,9 +2,12 @@
 
 /** @type { import('@storybook/react-webpack5').StorybookConfig } */
 const config = {
+  // "stories": [
+  //   "../src/**/*.mdx",
+  //   "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"
+  // ],
   "stories": [
-    "../src/**/*.mdx",
-    "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"
+    "../src/component/**/*.stories.@(js|jsx)",
   ],
   "addons": [
     "@storybook/addon-essentials",
