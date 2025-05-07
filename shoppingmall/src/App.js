@@ -32,7 +32,7 @@ function App() {
     <CardProvider>
       <Router>
         <Routes>
-          <Route path="/" element={
+          <Route path="/internINmeta" element={
             <>
               <Header cartCount={cartCount}></Header>
               <Container>
@@ -51,8 +51,8 @@ function App() {
               </Container>
             </>
           }/>
-          <Route path="/addcard" element={<CardRegistration/>}/>
-          <Route path="/cardlist" element={<CardList/>}/>
+          <Route path="/internINmeta/addcard" element={<CardRegistration/>}/>
+          <Route path="/internINmeta/cardlist" element={<CardList/>}/>
         </Routes>
       </Router>
     </CardProvider>
