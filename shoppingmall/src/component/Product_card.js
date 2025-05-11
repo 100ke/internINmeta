@@ -2,7 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import React, { useState } from 'react';
 
-function Product_card({setCartCount}) {
+function Product_card({product, setCartCount}) {
   const [isAdded, setIsAdded] = useState(false);
 
   const handleClick = () => {
@@ -13,29 +13,16 @@ function Product_card({setCartCount}) {
       setIsAdded(false);
       setCartCount(prev => prev - 1);
     }
-
-    // 비동기 처리 흉내
-    // if (!isAdded) {
-    //   setIsAdded(true);
-    //   setTimeout(()=>{
-    //     setCartCount(prev => prev + 1);
-    //   },500);
-    // } else {
-    //   setIsAdded(false);
-    //   setTimeout(()=>{
-    //     setCartCount(prev => prev + 1);
-    //   },500);
-    // }
   };
 
   return (
     <Card className='card w-100' style={{ maxWidth: '18rem' }}>
       <Card.Img variant="top" src="https://100ke.github.io/internINmeta/images/running_shoe_03.jpg" />
       <Card.Body>
-        <Card.Title>브랜드 A</Card.Title>
+        <Card.Title>{product.name}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">편안하고 착용감이 좋은 신발</Card.Subtitle>
         <Card.Text>
-          35,000원
+          {product.price.toLocaleString()}원
         </Card.Text>
         <Button 
           variant={isAdded ? 'secondary' : 'dark'} 
