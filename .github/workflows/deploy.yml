@@ -17,14 +17,14 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: intern/shoppingmall
+        working-directory: shoppingmall
 
       - name: Build project
         run: npm run build
-        working-directory: intern/shoppingmall
+        working-directory: shoppingmall
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: intern/shoppingmall/build
+          publish_dir: shoppingmall/build
