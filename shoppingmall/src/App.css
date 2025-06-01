@@ -14,9 +14,13 @@
 }
 
 .list {
-
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.list h2 {
+  margin-top: 1rem;
+  font-weight: bold;
 }
 
 .card {
@@ -39,6 +43,7 @@
   text-align: center;
   align-items: center;
   background: #b6b6b6;
+  cursor: pointer;
 }
 
 .back-btn {
@@ -78,12 +83,141 @@
   font-size: 13px;
 }
 
+.select-card {
+  background-color: yellow;
+  display: block;
+  width: 60%;
+  border-radius: 2rem;
+  border: none;
+  padding: 1rem;
+  background-color: yellow;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
 .password-box {
   width: 3rem !important;
 }
 
 .card-reg-btn {
   width: 100%;
+}
+
+.cart-header {
+  height: 4rem;
+  background-color: #292929;
+}
+
+.cart-header button {
+  font-size: 2rem;
+  margin: 1rem;
+  background: none;
+  border: none;
+  margin: 0 1rem;
+  color: white;
+}
+
+.cart-container, .complete-page {
+  margin: 1.5rem;
+}
+
+.cart-container h1, .complete-page h1 {
+  font-weight: bold;
+}
+
+.cart-container p {
+  margin: 0;
+}
+
+.cart-container .items-price, .cart-container .delivery-fee, .total-price {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.cart-container span {
+  font-size: 1.2rem;
+}
+
+.cart-container button, .cartbtn-in-detail {
+  display: block;
+  width: 100%;
+  border-radius: 2rem;
+  border: none;
+  padding: 1rem;
+  background-color: #434343;
+  color: white;
+  margin: 0 auto;
+}
+
+.price-area {
+  border-top: 1px solid #b6b6b6;
+  border-bottom: 1px solid #b6b6b6;
+  padding: 1rem 0;
+}
+
+.total-price {
+  padding: 1rem 0;
+}
+
+.cart-item {
+  display: flex;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.cart-item img {
+  width: 15rem;
+  margin-right: 1rem;
+  border-radius: 2rem;
+}
+
+.item-content h3 {
+  font-weight: bold;
+}
+
+.btn-area {
+  margin-top: 2rem;
+}
+
+.btn-area .up-down {
+  color: #b6b6b6;
+  font-size: 1.3rem;
+}
+
+.btn-area span {
+  margin: 0 1rem;
+}
+
+.relatedlist {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.relatedlist img {
+  width: 30%;
+  border-radius: 1.5rem;
+}
+
+.detail-page>img {
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+.datail-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.complete-page {
+  text-align: center;
+  padding: 10rem 0;
+}
+
+.complete-page button {
+  width: 100%;
+  margin: 2rem 0;
 }
 
 /* .App {

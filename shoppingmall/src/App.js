@@ -1,40 +1,29 @@
 import './App.css';
-import Header from './component/Header.js';
-import CardList from './component/CardList.js';
-import { Container } from 'react-bootstrap';
-import React, { useState } from 'react';
+import React from 'react';
+import CardList from './component/CardList.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CardProvider } from './context/CardContext.js';
-import CardRegistration from './component/CardRegistration.js';
-import ProductList from './component/ProductList.js';
-import { useRecoilValue } from 'recoil';
-import { productCountState } from './recoil/products.js';
+import CardRegistration from './component/CardRegistration.jsx';
+import Cart from './component/Cart.jsx';
+import MainPage from './component/MainPage.jsx';
+import ProductDetail from './component/ProductDetail.jsx';
+import PayComplete from './component/PayComplete.jsx';
 
 function App() {
-  const [cartCount, setCartCount] = useState(0);
-  const productCount = useRecoilValue(productCountState);
 
   return (
-    <CardProvider>
-      <Router>
+    <Router>
+        <CardProvider>
         <Routes>
-          <Route path="/internINmeta" element={
-            <>
-              <Header cartCount={cartCount}></Header>
-              <Container>
-                <div className='list'>
-                  <h2>신발 상품 목록</h2>
-                  <span>현재 {productCount}개의 상품이 있습니다.</span>
-                  <ProductList setCartCount={setCartCount}/>
-                </div>
-              </Container>
-            </>
-          }/>
+          <Route path="/internINmeta" element={<MainPage/>}/>
           <Route path="/internINmeta/addcard" element={<CardRegistration/>}/>
           <Route path="/internINmeta/cardlist" element={<CardList/>}/>
+          <Route path="/internINmeta/cart" element={<Cart/>}/>
+          <Route path="/internINmeta/product/:id" element={<ProductDetail/>}/>
+          <Route path="/internINmeta/paycomplete" element={<PayComplete/>}/>
         </Routes>
-      </Router>
-    </CardProvider>
+      </CardProvider>
+    </Router>
   );
 }
 
