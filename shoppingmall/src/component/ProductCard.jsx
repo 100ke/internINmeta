@@ -41,7 +41,10 @@ function ProductCard({product, setCartCount}) {
         <Button 
           variant={isAdded ? 'secondary' : 'dark'} 
           className='rounded-pill add-btn'
-          onClick={handleAddToCart}
+          onClick={(e)=>{
+            e.stopPropagation();
+            handleAddToCart(e);
+          }}
         >
           {isAdded?'담김!':'담기'}
         </Button>
