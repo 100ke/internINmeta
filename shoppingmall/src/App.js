@@ -10,7 +10,6 @@ import ProductDetail from './component/ProductDetail.jsx';
 import PayComplete from './component/PayComplete.jsx';
 
 function App() {
-
   return (
     <Router>
         <CardProvider>
