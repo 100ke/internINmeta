@@ -3,7 +3,7 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      - 100ke-patch-2
+      - main
 
 jobs:
   deploy:
